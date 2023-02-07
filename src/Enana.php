@@ -15,7 +15,7 @@ class Enana
     }
 
     public function heridaLeve($a){
-        $this->puntosVida - $a;
+        $this->puntosVida -= $a;
        if($this->puntosVida > 0){
            $this->situacion = "viva";
            return $this->situacion;
@@ -46,7 +46,7 @@ class Enana
     }
 
     public function pocimaExtra(){
-        if ($this->puntosVida === 0) {
+        if ($this->puntosVida == 0) {
             $this->puntosVida + 50;
             $this->situacion = "viva";
             return $this->situacion;

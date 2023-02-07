@@ -24,17 +24,17 @@ class Enana
         #Se le quitan 10 puntos de vida a la Enana y además se cambia el valor de situacion (si fuera necesario)
     }
 
-    public function heridaGrave($a){
+    public function heridaGrave(){
         $this->puntosVida = 0;
          $this->situacion = "limbo";
          return $this->situacion;
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
     }
 
-    public function pocima($a){
+    public function pocima(){
       
         if ($this->puntosVida > -10 && $this->puntosVida < 0 ){
-            $a =  $this->puntosVida + 10;
+            $this->puntosVida + 10;
              $this->situacion = "viva";
              return $this->situacion;
         }

@@ -41,7 +41,7 @@ class Enana
         #Solo pocimaExtra puede rescatarla del limbo.
     }
 
-    public function pocimaExtra(){
+    public function pocimaExtra($a){
         $a = $this->puntosVida + 50;
         if ($this->puntosVida === 50) {
              return $this->situacion = "viva";
